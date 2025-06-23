@@ -1,0 +1,93 @@
+/* con el selector universal reseteamos la pagina dandole un margin y un paddin de 0 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-texto:rgb(0, 0, 0);
+    --color--button:#3498db;
+    --color--precio:rgb(0, 128, 0);
+    --color-fondo_contenedor:#f4f4f4;
+    --color-titulo-carta:#2c3e50;
+    --color-descripcion:#666;
+    --color-textbotton:#ffff;
+    --color-transitionbotton:rgb(206, 0, 233);
+}
+body{
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo_contenedor);
+    padding: 40px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0,0.1);
+
+}
+
+.producto-card{
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
+    margin: 0 auto;
+    position: relative;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+}
+.producto-card:hover{
+    transform: scale(1.05);
+}
+
+.producto-card__imagen{
+    width: 100%;
+    height: 200px;
+    background: #e0e0e0;
+    /* display: block; */
+    position: relative;
+
+}
+
+.producto-card__contenido{
+    padding: 15px;
+}
+
+
+.producto-card__precio{
+    color: var(--color--precio);
+    font-size: 18px;
+}
+.producto-card__titulo{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:var(--color-titulo-carta)
+}
+.producto-card__descripcion{
+    color: var(--color-descripcion);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.producto-card__button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color-textbotton);
+    border: none;
+    background-color: var(--color--button);
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.producto-card__button:hover{
+    transition: 2s;
+    background-color:var(--color-transitionbotton);
+}

@@ -1,6 +1,0 @@
-/* con el selector universal reseteamos la pagina dandole un margin y un paddin de 0 */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}

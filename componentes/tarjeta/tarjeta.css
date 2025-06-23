@@ -1,0 +1,97 @@
+/* con el selector universal reseteamos la pagina dandole un margin y un paddin de 0 */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
+}
+
+:root {
+    --color-texto: rgb(0, 0, 0); /* Define una variable para el color del texto */
+    --color--button: #3498db; /* Define una variable para el color del botón */
+    --color--precio: rgb(0, 128, 0); /* Define una variable para el color del precio */
+    --color-fondo_contenedor: #f4f4f4; /* Define una variable para el color de fondo del contenedor */
+    --color-titulo-carta: #2c3e50; /* Define una variable para el color del título de la carta */
+    --color-descripcion: #666; /* Define una variable para el color de la descripción */
+    --color-textbotton: #ffff; /* Define una variable para el color del texto del botón */
+    --color-transitionbotton: rgb(206, 0, 233); /* Define una variable para el color de transición del botón */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo a Arial o sans-serif como alternativa */
+    line-height: 1.6; /* Establece la altura de línea para mejorar la legibilidad */
+    color: var(--color-texto); /* Aplica el color de texto definido en la variable */
+    background-color: var(--color-fondo_contenedor); /* Aplica el color de fondo del contenedor */
+    padding: 40px; /* Añade un padding de 40px alrededor del contenido del cuerpo */
+}
+
+.container {
+    max-width: 1200px; /* Establece un ancho máximo de 1200px para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background: white; /* Establece el fondo del contenedor a blanco */
+    padding: 40px; /* Añade un padding de 40px dentro del contenedor */
+    border-radius: 12px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil al contenedor */
+}
+
+.producto-card {
+    width: 320px; /* Establece un ancho fijo de 320px para la tarjeta del producto */
+    border: 1px solid #ddd; /* Añade un borde gris claro alrededor de la tarjeta */
+    border-radius: 12px; /* Redondea las esquinas de la tarjeta */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde de la tarjeta */
+    background: white; /* Establece el fondo de la tarjeta a blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil a la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    position: relative; /* Establece la posición relativa para elementos hijos posicionados */
+    /* display: inline-block; */ /* Comentado: podría usarse para mostrar la tarjeta en línea */
+    /* vertical-align: top; */ /* Comentado: podría usarse para alinear la tarjeta en la parte superior */
+}
+
+.producto-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al pasar el mouse sobre ella */
+}
+
+.producto-card__imagen {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 200px; /* Establece una altura fija de 200px para la imagen */
+    background: #e0e0e0; /* Establece un color de fondo gris claro para la imagen */
+    /* display: block; */ /* Comentado: podría usarse para mostrar la imagen como un bloque */
+    position: relative; /* Establece la posición relativa para elementos hijos posicionados */
+}
+
+.producto-card__contenido {
+    padding: 15px; /* Añade un padding de 15px al contenido de la tarjeta */
+}
+
+.producto-card__precio {
+    color: var(--color--precio); /* Aplica el color del precio definido en la variable */
+    font-size: 18px; /* Establece el tamaño de la fuente del precio */
+}
+
+.producto-card__titulo {
+    font-size: 18px; /* Establece el tamaño de la fuente del título */
+    margin-bottom: 10px; /* Añade un margen inferior de 10px al título */
+    color: var(--color-titulo-carta); /* Aplica el color del título definido en la variable */
+}
+
+.producto-card__descripcion {
+    color: var(--color-descripcion); /* Aplica el color de la descripción definido en la variable */
+    font-size: 14px; /* Establece el tamaño de la fuente de la descripción */
+    margin-bottom: 15px; /* Añade un margen inferior de 15px a la descripción */
+}
+
+.producto-card__button {
+    width: 100%; /* Establece el ancho del botón al 100% del contenedor */
+    padding: 10px; /* Añade un padding de 10px dentro del botón */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+    color: var(--color-textbotton); /* Aplica el color del texto del botón definido en la variable */
+    border: none; /* Elimina el borde del botón */
+    background-color: var(--color--button); /* Aplica el color de fondo del botón definido en la variable */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    font-size: 14px; /* Establece el tamaño de la fuente del botón */
+    transition: background-color 0.3s; /* Añade una transición suave al color de fondo del botón */
+}
+
+.producto-card__button:hover {
+    transition: 2s; /* Establece una transición de 2 segundos al pasar el mouse sobre el botón */
+    background-color: var(--color-transitionbotton); /* Cambia el color de fondo del botón al pasar el mouse */
+}
