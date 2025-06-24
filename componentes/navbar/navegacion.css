@@ -1,0 +1,57 @@
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
+}
+/* 
+.container {
+    max-width: 1200px; Establece un ancho máximo de 1200px para el contenedor
+    margin: 0 auto; Centra el contenedor horizontalmente
+    background: white; Establece el fondo del contenedor a blanco
+    padding: 40px; Añade un padding de 40px dentro del contenedor
+    border-radius: 12px; Redondea las esquinas del contenedor
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); Añade una sombra sutil al contenedor
+} */
+
+.navegacion {
+    float: left; /* Permite que el elemento flote a la izquierda, permitiendo que otros elementos se alineen a su lado derecho */
+    color: white; /* Establece el color del texto a blanco */
+    padding: 15px 20px; /* Añade un padding de 15px arriba y abajo, y 20px a los lados */
+    font-size: 18px; /* Establece el tamaño de la fuente a 18px */
+    font-weight: bold; /* Establece el peso de la fuente a negrita */
+    text-decoration: none; /* Elimina el subrayado del texto */
+    width: 100%; /* Establece el ancho del elemento al 100% de su contenedor */
+}
+
+.navbar {
+    background: #046acf; /* Establece el color de fondo de la barra de navegación a un azul específico */
+    padding: 0; /* Elimina el padding interno de la barra de navegación */
+    overflow: hidden; /* Asegura que los elementos flotantes dentro de la barra de navegación se contengan */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre la barra de navegación */
+}
+
+.navbar__menu {
+    float: right; /* Permite que el menú flote a la derecha de la barra de navegación */
+    list-style: none; /* Elimina los puntos de la lista */
+}
+
+.navbar__item {
+    float: left; /* Permite que cada ítem del menú flote a la izquierda */
+}
+
+.navbar__link {
+    margin-left: 120px; /* Añade un margen izquierdo de 120px al enlace */
+    margin-right: 80px; /* Añade un margen derecho de 80px al enlace */
+    display: block; /* Hace que el enlace se comporte como un bloque, ocupando todo el ancho disponible */
+    color: white; /* Establece el color del texto del enlace a blanco */
+    padding: 15px 20px; /* Añade un padding de 15px arriba y abajo, y 20px a los lados */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background 0.3s; /* Añade una transición suave al color de fondo del enlace */
+}
+
+.navbar__link:hover {
+    transition: 0.3s; /* Establece una transición suave de 0.3 segundos al pasar el mouse sobre el enlace */
+    background: #34495e; /* Cambia el color de fondo a un gris oscuro al pasar el mouse */
+    color: red; /* Cambia el color del texto a rojo al pasar el mouse */
+}
+
