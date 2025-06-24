@@ -10,13 +10,13 @@
 :root{
 /* Definición de variables globales utilizando :root */
     /* Color principal para el texto del sitio (gris oscuro) */
-    --color-texto: #333;
+    --color-texto: #04929c;
     /* Color de fondo general del body (gris claro) */
     --color-fondobody: #f0f0f0;
     /* Color de fondo para el encabezado de la página (blanco) */
     --color-encabezadopagina: #ffffff;
     /* Color de fondo de los botones (gris oscuro) */
-    --color-botonfondo: #333;
+    --color-botonfondo: #8b10aa;
     /* Color del texto dentro de los botones (blanco) */
     --color-textoboton: #fff;
 }
@@ -27,12 +27,13 @@ body {
 }
 
 .encabezado-pagina {
-    background-color:var(--color-encabezadopagina); /* Color de fondo blanco para el encabezado */
-    padding: 1rem 2rem; /* Espaciado interno (arriba/abajo y a los lados) */
-    display: flex; /* Activa el modelo de caja flexible para alinear los hijos */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-    align-items: center; /* Centra los elementos hijos verticalmente */
-    border-bottom: 1px solid #eee; /* Añade una línea divisoria sutil en la parte inferior */
+    /* Aplica el color de fondo definido en la variable --color-encabezadopagina (generalmente blanco) */
+    background-color: var(--color-encabezadopagina);
+    padding: 1rem 2rem; /* Espaciado interno: 1rem arriba/abajo y 2rem a los lados */
+    text-align: center;/* Centra horizontalmente el contenido del encabezado */
+    border-bottom: 1px solid #eee;  /* Borde inferior delgado y gris claro (#eee) para separar visualmente el encabezado */
+    position: relative; /* Posiciona el elemento relativamente para que elementos hijos con position absoluta se posicionen respecto a este */
+    min-height: 60px;  /* Altura mínima del encabezado para asegurar que tenga al menos 60px de alto */
 }
 
 .encabezado-pagina__titulo {
