@@ -26,6 +26,203 @@
                 </ul>
             </nav>
         </div> -->
+
+        <!-- 4. COMPONENTE LISTA DE TAREAS -->
+        <div class="component-section">
+            <h2 class="component-title">4. Componente Lista de Tareas</h2>
+            <div class="task-list">
+                <div class="task-list__header">
+                    <h3 class="task-list__title">Lista de Tareas</h3>
+                </div>
+                
+                <div class="task-list__item">
+                    <input type="checkbox" class="task-list__checkbox" checked>
+                    <span class="task-list__text">Completar ejercicio de BEM</span>
+                    <button class="task-list__delete">×</button>
+                </div>
+                
+                <div class="task-list__item task-list__item--completed">
+                    <input type="checkbox" class="task-list__checkbox" checked>
+                    <span class="task-list__text">Estudiar HTML y CSS</span>
+                    <button class="task-list__delete">×</button>
+                </div>
+                
+                <div class="task-list__item">
+                    <input type="checkbox" class="task-list__checkbox">
+                    <span class="task-list__text">Practicar JavaScript</span>
+                    <button class="task-list__delete">×</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. COMPONENTE GALERÍA DE IMÁGENES -->
+        <!-- <div class="component-section">
+            <h2 class="component-title">5. Componente Galería de Imágenes</h2>
+            <div class="gallery">
+                <h3 class="gallery__title">Galería de Proyectos</h3>
+                <div class="gallery__grid">
+                    <div class="gallery__item">
+                        <img class="gallery__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3EImagen 1%3C/text%3E%3C/svg%3E" alt="Imagen 1">
+                        <div class="gallery__caption">Proyecto Web</div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3EImagen 2%3C/text%3E%3C/svg%3E" alt="Imagen 2">
+                        <div class="gallery__caption">App Móvil</div>
+                    </div>
+                    <div class="gallery__item">
+                        <img class="gallery__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='100%25' height='100%25' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23999'%3EImagen 3%3C/text%3E%3C/svg%3E" alt="Imagen 3">
+                        <div class="gallery__caption">Diseño UI/UX</div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- .task-list {
+            max-width: 400px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .task-list__header {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .task-list__title {
+            margin: 0;
+            text-align: center;
+        }
+
+        .task-list__item {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .task-list__item:last-child {
+            border-bottom: none;
+        }
+
+        .task-list__checkbox {
+            margin-right: 10px;
+        }
+
+        .task-list__text {
+            display: inline;
+        }
+
+        .task-list__item--completed .task-list__text {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .task-list__delete {
+            float: right;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        /* 5. COMPONENTE GALERÍA DE IMÁGENES */
+        .gallery {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .gallery__title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery__grid::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .gallery__item {
+            width: 30%;
+            margin: 1.66%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .gallery__image {
+            width: 100%;
+            height: 150px;
+            background: #e0e0e0;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .gallery__item:hover .gallery__image {
+            transform: scale(1.05);
+        }
+
+        .gallery__caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* 6. COMPONENTE ALERTA/NOTIFICACIÓN */
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .alert__icon {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .alert__message {
+            display: inline;
+        }
+
+        .alert__close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .alert--success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .alert--warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+
+        .alert--error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        } -->
         <div class="producto-card">
             <img class="producto-card__imagen" src="img/zapatilla joma.jpg" alt="producto">
             <div class="producto-card__contenido">
