@@ -14,14 +14,6 @@ body {
     margin-bottom: 24px; /* Espacio inferior */
 }
 
-/* Enlace para volver atrás en el encabezado */
-.tabla-datos__volver {
-    color: #fbbf24; /* Color amarillo */
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1rem; /* Tamaño de fuente estándar */
-    margin-right: 24px; /* Espacio a la derecha */
-}
-
 /* Título del encabezado de la tabla */
 .tabla-datos__titulo {
     display: inline-block; /* Permite ajustar el ancho al contenido */
