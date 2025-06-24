@@ -54,7 +54,7 @@ body {
     width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
     height: 200px; /* Establece una altura fija de 200px para la imagen */
     background: #e0e0e0; /* Establece un color de fondo gris claro para la imagen */
-    /* display: block; */ /* Comentado: podría usarse para mostrar la imagen como un bloque */
+    display: block; /*podría usarse para mostrar la imagen como un bloque */
     position: relative; /* Establece la posición relativa para elementos hijos posicionados */
 }
 

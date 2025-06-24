@@ -3,8 +3,8 @@
     padding: 0; /* Elimina el padding predeterminado de todos los elementos */
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total de los elementos */
 }
-/* 
-.container {
+
+/* .container {
     max-width: 1200px; Establece un ancho máximo de 1200px para el contenedor
     margin: 0 auto; Centra el contenedor horizontalmente
     background: white; Establece el fondo del contenedor a blanco
