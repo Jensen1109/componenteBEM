@@ -99,3 +99,28 @@
     /* Cambia el color del texto a un gris claro cuando el checkbox está marcado. */
     color: #999;
 }
+
+/* .lista-tarea__checkbox,
+.lista-tarea__item--completed:checked{
+    text-decoration: line-through;
+    color: #999;
+}     */
+
+/* 
+div:has(button:checked){
+    color: #e74c3c;
+    background: green;
+} */
+
+
+/* .lista-tarea__item--completed,
+.lista-tarea__text {
+    text-decoration: line-through;
+    color: #999;
+} */
+/* .lista-tarea__item--completed,
+.lista-tarea__text:hover{
+    transition: 0.2s;
+    text-decoration: line-through;
+    color: #999;
+} */
