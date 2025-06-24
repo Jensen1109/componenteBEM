@@ -1,23 +1,23 @@
 * {
-    /* **margin: 0;** */
+
     /* Elimina el margen predeterminado de todos los elementos. */
     margin: 0;
-    /* **padding: 0;** */
+
     /* Elimina el relleno predeterminado de todos los elementos. */
     padding: 0;
-    /* **box-sizing: border-box;** */
+
     /* Asegura que el relleno y el borde se incluyan en el ancho y alto total del elemento, facilitando el diseño. */
     box-sizing: border-box;
 }
 
 .galeria {
-    /* **background: rgb(255, 255, 255);** */
+
     /* Establece el color de fondo del contenedor de la galería a blanco puro (usando valores RGB). */
     background: rgb(255, 255, 255);
-    /* **padding: 20px;** */
+
     /* Agrega un relleno de 20 píxeles alrededor del contenido dentro del contenedor de la galería, creando espacio entre el borde y el contenido. */
     padding: 20px;
-    /* **border-radius: 8px;** */
+    
     /* Redondea las esquinas del contenedor de la galería con un radio de 8 píxeles, suavizando sus bordes. */
     border-radius: 8px;
 }
